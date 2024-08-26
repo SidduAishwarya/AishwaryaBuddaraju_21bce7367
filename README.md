@@ -88,5 +88,5 @@ Feel free to submit issues and pull requests. Contributions to improve the game 
 
 ## Contact
 
-For any questions or suggestions, please contact [Your Name](mailto:aishwaryavarma.buddaraju@gmail.com).
+For any questions or suggestions, please contact [Aishwarya](mailto:aishwaryavarma.buddaraju@gmail.com).
 
