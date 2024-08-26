@@ -1,0 +1,138 @@
+body {
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent unwanted scroll */
+  }
+  
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Increase max-width if needed */
+    box-sizing: border-box;
+    position: relative; /* To ensure absolute elements are positioned relative to it */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+  }
+  
+  .game-content {
+    display: flex;
+    gap: 20px; /* Space between board and history */
+    width: 100%;
+    max-width: 1000px; /* Adjust as needed */
+  }
+  
+  .board-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  td {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border: 2px solid #555;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  td.selected {
+    background-color: #ff6f61; /* Bright coral color */
+  }
+  
+  td.selected:hover {
+    background-color: #ff8a65; /* Slightly lighter coral on hover */
+    transform: scale(1.05);
+  }
+  
+  td:hover {
+    background-color: #555;
+    transform: scale(1.05);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #666;
+  }
+  
+  button:active {
+    background-color: #888;
+  }
+  
+  .current-player {
+    font-size: 1.5rem;
+    color: #00ffcc;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    background-color: #333;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 0px 10px 2px #00ffcc;
+  }
+  
+  .move-history-container {
+    flex: 1;
+    max-width: 400px; /* Adjust as needed */
+    background-color: #333;
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .move-history h2 {
+    margin-bottom: 10px;
+  }
+  
+  .move-history ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; /* Add vertical scroll if needed */
+    max-height: 500px; /* Adjust height as needed */
+  }
+  
+  .move-history li {
+    padding: 5px 0;
+    border-bottom: 1px solid #555;
+  }
+  
+  .move-history li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+  }
+  
