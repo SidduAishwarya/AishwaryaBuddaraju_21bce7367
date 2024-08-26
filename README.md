@@ -3,6 +3,8 @@
 
 A turn-based chess-like game with a 5x5 grid and WebSocket communication. Players take turns moving their characters with unique abilities and the game ends when one player eliminates all of the opponent's characters.
 
+![Chess-Like Game Screenshot]("C:\Users\aishw\Downloads\chesslikegame_21bce7367.png")
+
 ## Project Structure
 
 The project is organized into two main parts:
